@@ -24,7 +24,7 @@
 | 1 | 0 | 1 | 0 |
 | 1 | 1 | 0 | 1 | \
 
-![](https://github.com/xmajnu00/Digital-electronics-1/blob/master/Labs/01-gates/simulation.png) 
+![simulation](\https://github.com/xmajnu00/Digital-electronics-1/blob/master/Labs/01-gates/simulation.png) 
 
 
 
