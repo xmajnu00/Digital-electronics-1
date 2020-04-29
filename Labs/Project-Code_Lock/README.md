@@ -10,6 +10,6 @@
 ## Introduction
 
 ## Software
-ISE 14.7
+ISE 14.7 <br/>
 EDA Playground
 ## References
