@@ -11,6 +11,11 @@ The main task was to create code lock with matrix keyboard 4x3, a time limit for
 <br/>
 Schematic of our code lock: 
 ![Schematic](https://github.com/xmajnu00/Digital-electronics-1/blob/master/Labs/Project-Code_Lock/schematic.png)
+In our project we used 4 main modules:
+* Finite state machine
+* keypad
+* clock enable
+* LED display
 
 ## Software
 ISE 14.7 <br/>
