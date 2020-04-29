@@ -14,15 +14,17 @@ USE IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity keypad is
 	port(
-		clk,reset: in std_logic;
+		clk: in std_logic;
+		reset: in std_logic;
 		col_line : in std_logic_vector(2 downto 0);
-		row_line : out std_logic_vector(3 downto 0));
-	
+		row_line : out std_logic_vector(3 downto 0);
+		key_o: out std_logic_vector(3 downto 0)
+			);
 end entity keypad; 
 
 architecture Behavioral of keypad is
 
-signal temp : std_logic_vector(10 downto 0);
+signal temp : std_logic_vector(10 downto 0):="00000000000";
 
 	begin
 
@@ -42,31 +44,43 @@ signal temp : std_logic_vector(10 downto 0);
 					when "001" =>
 
 						if col_line = "011" then		-- #
+							key_o <= "1010";
 						elsif col_line = "101" then 	-- 0
+							key_o <= "0000";
 						elsif col_line = "110" then	--	*
+							key_o <= "1011";
 						end if;
 		
 					when "010" => row_line <= "1011"; 		--second row	1 2 3
 					when "011" =>
 			
 						if col_line = "110"	then		-- 3
+							key_o <= "0011";
 						elsif col_line = "101" then	-- 2
+							key_o <= "0010";
 						elsif col_line = "011" then 	-- 1
+							key_o <= "0001";
 						end if;
 
 					when "100" =>	row_line <= "1101"; 			--third row	4 5 6
 					when "101" =>
 
 						if col_line = "110" 	then		-- 6
+							key_o <= "0110";
 						elsif col_line = "101" then 	-- 5
-						elsif col_line = "011" then 	-- 4		
+							key_o <= "0101";
+						elsif col_line = "011" then 	-- 4	
+							key_o <= "0100";						
 						end if;
 
 					when "110" => row_line <= "1110"; 			--fourth row 7 8 9
 					when "111" => 
-						if col_line = "110" 	then			-- 9
+						if col_line = "110" 	then		-- 9
+						key_o <= "1001";
 						elsif col_line = "101" then 	-- 8
+						key_o <= "1000";
 						elsif col_line = "011" then	-- 7
+						key_o <= "0111";
 						end if;
 					when others => row_line <= "1111";
 			
