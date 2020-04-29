@@ -1,13 +1,14 @@
 # Digital-electronics-1 Project: Code Lock
 
 #### Table of Contents
+<a name="Introduction"></a>
+
 
 1. Introduction <br/>
 2. Software <br/>
 3. References <br/>
 
 
-## Introduction
 Welcome to our project from course BPC-DE1: Code lock. <br/>
 The main task was to create code lock with matrix keyboard 4x3, a time limit for entering the correct pin and signaling an incorrect attempt.
 ## Software
