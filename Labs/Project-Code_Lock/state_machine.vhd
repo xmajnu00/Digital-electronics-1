@@ -32,7 +32,7 @@ architecture Behavioral of FSM is
 				try<="00";
 				mode<='0';
 			else
-				if(clk'EVENT AND clk='1') then
+				if(rising_edge(clk)) then
 					case state is
 						when usr_store=> 
 							if(key_in(0) ='1') then
