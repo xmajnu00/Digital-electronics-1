@@ -18,7 +18,7 @@ In our project we used 4 main modules:
 * LED display
 <br/>
 In finite state machine(FSM) module was tested state of key input and then checked, if the entered code was correct or incorrect. After every inccorect code there was updated number of attempts until maximum number of allowed attempts is reached.
-<br/>
+<br/> <br/>
 In keypad module was initialized numbers used on out matrix keyboard 4x3. In first row, there are character "#", number 0 and character "*". In second row, there are numbers 1,2 and 3, in third row numbers 4,5 and 6 and in the last row, there are numbers from 7 to 9. These characters and numbers are lately used for entering the correct or incorrect code. 
 <br/>
 
