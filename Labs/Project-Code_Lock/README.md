@@ -8,7 +8,8 @@
 
 
 ## Introduction
-
+Welcome to our project from course BPC-DE1: Code lock. <br/>
+The main task was to create code lock with matrix keyboard 4x3, a time limit for entering the correct pin and signaling an incorrect attempt.
 ## Software
 ISE 14.7 <br/>
 EDA Playground
