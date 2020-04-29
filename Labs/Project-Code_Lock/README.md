@@ -11,8 +11,8 @@ The main task was to create code lock with matrix keyboard 4x3, a time limit for
 With use of ISE 14.7 and VHDL programming language we made algorithm for code lock with writing rows and reading columns. In loop, we are testing every 100 us, if there is high level on matrix keyboard on every bit, up to 5000 times. After that, next bit is beeing tested.  
 
 <br/>
+![Schematic](https://github.com/xmajnu00/Digital-electronics-1/blob/master/Labs/Project-Code_Lock/schematic.png) <br/>
 In our project we used 4 main modules:
-![Schematic](https://github.com/xmajnu00/Digital-electronics-1/blob/master/Labs/Project-Code_Lock/schematic.png)
 * Finite state machine
 * Keypad
 * Clock enable
