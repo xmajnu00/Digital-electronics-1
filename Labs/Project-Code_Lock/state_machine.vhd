@@ -39,7 +39,7 @@ architecture Behavioral of FSM is
 								temp:="00";
 								count<=count+1;
 								state<=usr_wait4release;
-							elsif(key_in(2) ='1') then
+							elsif(key_in(1) ='1') then
 								temp:="01";
 								count<=count+1;
 								state<=usr_wait4release;
