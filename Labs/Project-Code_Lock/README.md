@@ -23,7 +23,11 @@ In keypad module was initialized numbers used on out matrix keyboard 4x3. In fir
  <br/>
  Maticová postupně testuje hodnotu sloupce. V případě že je stisknuta klávesa v daném sloupci tak je připojena na nízkou hodnotu "0". Totéž se poté provede s testováním řádku a tím se narazí na stisknutou klávesu (například při col_line :="011" a row_line="1110" se jedná o stisknutí klávesy 7). Tyto data jsou následně posílány v FSM, kde jsou porovnávány s hodnotou pro povolení přístupu.
  <br/>
- 
+ Do FSM jde signál z klávesnice a porovnává jednotlivé údaje postupně za sebou přičemž jde od hodnoty nejnižšího vstupu a zjišťuje korektnost dané klávesy pro odemknutí. Výstup je následně připojen na LED display, kde se pomocí ledek zobrazuje počet chybných pokusů od 0 tedy začátku až po 3 chybné pokusy signalizovány svícením LEDky. Uvažujeme, že dané ledky by se mohly nacházet na CPLD panelu a dané ledky pro pokusy by svítily červeně.
+<br/>
+Pracovní frekvence v našem zapojení je 10kHz a uvažovali jsme s připojením maticové klávesnice, která je připojena svými piny na desce coolrunner.  
+<br/>
+Obohacení programu: přidání RST tlačítka pro kompletní reset, tlařítko po jehož stisknutí si mohu navolit heslo, svícení zelené ledky po uspěšném zadání kódu.
 <br/> <br/>
 
 Simulation of our code lock:
