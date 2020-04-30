@@ -3,6 +3,7 @@
 #### Table of Contents
 1. Introduction <br/>
 2. Program enrichment <br/>
+3. Simulation <br/>
 3. Software <br/>
 4. References <br/>
 
@@ -28,13 +29,14 @@ The signal from the keypad goes to the FSM and compares the individual data one 
 <br/> <br/>
 The operating frequency in our connection is 10 kHz and we considered connecting a matrix keyboard, which is connected by its pins on the coolrunner board.
 <br/> <br/>
+
 ## Program enrichment
-* addition of RST button for complete reset
-* button after which we can choose a password
-* green LED lights up after successful entry of the code.
+* Addition of RST button for complete reset
+* Button after which we can choose a password
+* Green LED lights up after successful entry of the code.
 <br/> <br/>
 
-Simulation of our code lock:
+## Simulation
 ![Simulation](https://github.com/xmajnu00/Digital-electronics-1/blob/master/Labs/Project-Code_Lock/simulation_Code_lock.png)
 
 
