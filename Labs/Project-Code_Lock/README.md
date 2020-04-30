@@ -1,12 +1,13 @@
 # Digital-electronics-1 Project: Code Lock
 
 #### Table of Contents
-1. [Introduction](#introduction) <br/>
-2. [Program enrichment] (#Program enrichment) 
+1. Introduction <br/>
+2. Program enrichment
 3. Simulation <br/>
 3. Software <br/>
 4. References <br/>
 
+## Introdcution
 Welcome to our project from course BPC-DE1: Code lock. <br/>
 The main task was to create code lock with matrix keyboard 4x3, a time limit for entering the correct pin and signaling an incorrect attempt. <br/> <br/>
 With use of ISE 14.7 and VHDL programming language we made algorithm for code lock with writing rows and reading columns. In loop, we are testing every 100 us, if there is high level on matrix keyboard on every bit, up to 5000 times. After that, next bit is beeing tested.  <br/>
@@ -38,10 +39,11 @@ The operating frequency in our connection is 10 kHz and we considered connecting
 ## Simulation
 ![Simulation](https://github.com/xmajnu00/Digital-electronics-1/blob/master/Labs/Project-Code_Lock/simulation_Code_lock.png)
 
-## Introdcution
+
 ## Software
 ISE 14.7 <br/>
 EDA Playground
+
 ## References
 [Our github repository with project](https://github.com/xmajnu00/Digital-electronics-1/tree/master/Labs/Project-Code_Lock) <br/>
 [Inspiration for testbench looping](https://forums.xilinx.com/t5/Simulation-and-Verification/VHDL-Test-Bench-loop/m-p/508221/highlight/true?fbclid=IwAR0XJdSuRh-YEn6YNLzo23hpYOJm8F1rLGIMSDkAgnSzBemhPuButKjky7Y#M10757)
