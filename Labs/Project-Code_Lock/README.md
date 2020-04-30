@@ -47,4 +47,5 @@ EDA Playground
 ## References
 [Our github repository with project](https://github.com/xmajnu00/Digital-electronics-1/tree/master/Labs/Project-Code_Lock) <br/>
 [Inspiration for testbench looping](https://forums.xilinx.com/t5/Simulation-and-Verification/VHDL-Test-Bench-loop/m-p/508221/highlight/true?fbclid=IwAR0XJdSuRh-YEn6YNLzo23hpYOJm8F1rLGIMSDkAgnSzBemhPuButKjky7Y#M10757) <br/>
-[Inspiration for code lock](https://github.com/Nihilus89/VHDL-code-lock)
+[Inspiration for code lock](https://github.com/Nihilus89/VHDL-code-lock) <br/>
+[Another inspiration for code lock](https://github.com/MEDHAT-ALHADDAD/Electronic-security-code-lock-system)
