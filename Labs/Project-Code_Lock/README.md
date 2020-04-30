@@ -44,4 +44,5 @@ The operating frequency in our connection is 10 kHz and we considered connecting
 ISE 14.7 <br/>
 EDA Playground
 ## References
-[Our github repository with project](https://github.com/xmajnu00/Digital-electronics-1/tree/master/Labs/Project-Code_Lock)
+[Our github repository with project](https://github.com/xmajnu00/Digital-electronics-1/tree/master/Labs/Project-Code_Lock) <br/>
+[Inspiration for testbench looping](https://forums.xilinx.com/t5/Simulation-and-Verification/VHDL-Test-Bench-loop/m-p/508221/highlight/true?fbclid=IwAR0XJdSuRh-YEn6YNLzo23hpYOJm8F1rLGIMSDkAgnSzBemhPuButKjky7Y#M10757)
