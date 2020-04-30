@@ -1,7 +1,7 @@
 # Digital-electronics-1 Project: Code Lock
 
 #### Table of Contents
-1. Introduction <br/>
+1. [Introduction](https://github.com/xmajnu00/Digital-electronics-1/blob/master/Labs/Project-Code_Lock/README.md#Introduction) <br/>
 2. Program enrichment <br/>
 3. Simulation <br/>
 3. Software <br/>
