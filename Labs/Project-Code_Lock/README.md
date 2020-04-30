@@ -10,9 +10,9 @@
 ## Introdcution
 Welcome to our project from course BPC-DE1: Code lock. <br/>
 The main task was to create code lock with matrix keyboard 4x3, a time limit for entering the correct pin and signaling an incorrect attempt. <br/> <br/>
-With use of ISE 14.7 and VHDL programming language we made algorithm for code lock with writing rows and reading columns. In loop, we are testing every 100 us, if there is high level on matrix keyboard on every bit, up to 5000 times. After that, next bit is beeing tested.  <br/>
+With use of ISE 14.7 and VHDL programming language we made algorithm for code lock with writing rows and reading columns. In loop, we are testing every 100 us, if there is high level on matrix keyboard on every bit, up to 5000 times. After that, next bit is beeing tested.  <br/> <br/>
 
-![Schematic](https://github.com/xmajnu00/Digital-electronics-1/blob/master/Labs/Project-Code_Lock/schematic.png)
+![Schematic](https://github.com/xmajnu00/Digital-electronics-1/blob/master/Labs/Project-Code_Lock/schematic.png) <br/>
 In our project we used 4 main modules:
 * Finite state machine 
 * Keypad
