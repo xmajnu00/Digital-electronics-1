@@ -25,7 +25,7 @@ In keypad module was initialized numbers used on out matrix keyboard 4x3. In fir
  <br/> <br/>
  Matrix keyboard is testing column value gradually. If the key in the given column is pressed, it is connected to the low value "0". The same is then done with line testing and a keystroke is encountered (For example, when col_line: = "011" and row_line = "1110" is displayed, when you press 7). This data is then sent to FSM, where it is compared with the value for allowing access. 
  <br/> <br/>
-The signal from the keypad goes to the FSM and compares the individual data one after the other, starting from the value of the lowest input and determining the correctness of the given key for unlocking. The output can be displayed on the LED display, where the LED number of wrong attempts from 0 is used, ie up to 3 erroneous attempts signaling the LED lighting. We assume that the given LEDs could be located on the CPLD panel and the given LEDs for the experiments would glow red.
+The signal from the keypad goes to the FSM and compares the individual data one after the other, starting from the value of the lowest input and determining the correctness of the given key for unlocking. The output can be displayed on the LED display, where the LED number of wrong attempts from 0 is used, ie up to 3 wrong attempts signaling the LED lighting. We assume that the given LEDs could be located on the CPLD panel and the given LEDs for the experiments would glow red.
 <br/> <br/>
 The operating frequency in our connection is 10 kHz and we considered connecting a matrix keyboard, which is connected by its pins on the coolrunner board.
 <br/> <br/>
