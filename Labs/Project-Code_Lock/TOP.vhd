@@ -13,7 +13,7 @@ entity digilock is
 
 architecture Behavioral of digilock is	
 	
-	SIGNAL mode, correct: STD_LOGIC;
+	SIGNAL correct: STD_LOGIC;
 	SIGNAL try: STD_LOGIC_VECTOR(1 DOWNTO 0);	
 	signal key_in_h 	: STD_LOGIC_VECTOR(3 downto 0);
 	signal s_en: STD_LOGIC;
@@ -31,7 +31,7 @@ architecture Behavioral of digilock is
 	LEDdisplay:	entity work.led_display
 		port map	(
 			clk=>s_en,
-			mode=>mode, 
+		 
 			unlock=>correct,
 			try=>try, 
 			led=>leds
@@ -43,8 +43,7 @@ architecture Behavioral of digilock is
 			key_in => key_in_h,
    		clk => clk_i,
 			reset => reset,
-			try_out => try,
-			mode_out => mode, 
+			try_out => try, 
 			correct => correct
 			);
 	

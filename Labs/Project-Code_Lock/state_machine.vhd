@@ -5,14 +5,14 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity FSM is
 	port(
-		clk, reset: in STD_LOGIC;
+		clk: in STD_LOGIC;
+		reset: in STD_LOGIC;
 		key_in: in STD_LOGIC_VECTOR(3 DOWNTO 0);
 		try_out: out STD_LOGIC_VECTOR(1 DOWNTO 0);
-		mode_out, correct: out STD_LOGIC);
+		correct: out STD_LOGIC); 
 	end FSM;
 architecture Behavioral of FSM is
 		SIGNAL k0, k1, k2, k3: STD_LOGIC_VECTOR(1 DOWNTO 0);
-		SIGNAL mode: STD_LOGIC;
 		SIGNAL try: STD_LOGIC_VECTOR(1 DOWNTO 0);
 		SIGNAL count: STD_LOGIC_VECTOR(2 DOWNTO 0);
 
@@ -22,7 +22,7 @@ architecture Behavioral of FSM is
 		CONSTANT usr_key: STD_LOGIC_VECTOR(7 DOWNTO 0):= "11100100";-- enter user key as desired in reverse order. 4ht 3rd 2nd 1st
 			
 	begin
-		process(state,clk, key_in, reset, count, try, mode, k0,k1,k2,k3)
+		process(state,clk, key_in, reset, count, try,k0,k1,k2,k3) 
 		variable temp: STD_LOGIC_VECTOR(1 DOWNTO 0);
 		begin
 			if(reset='1') then
@@ -30,16 +30,15 @@ architecture Behavioral of FSM is
 				correct<='0';
 				count<="000";
 				try<="00";
-				mode<='0';
 			else
-				if(rising_edge(clk)) then
+				if(clk'EVENT AND clk='1') then
 					case state is
 						when usr_store=> 
 							if(key_in(0) ='1') then
 								temp:="00";
 								count<=count+1;
 								state<=usr_wait4release;
-							elsif(key_in(1) ='1') then
+							elsif(key_in(2) ='1') then
 								temp:="01";
 								count<=count+1;
 								state<=usr_wait4release;
@@ -89,8 +88,6 @@ architecture Behavioral of FSM is
 			end if;
 	end process; 
 	
-	mode_out<=mode;
-	--num_entered<=count;
 	try_out<=try;
 
 end Behavioral; 
