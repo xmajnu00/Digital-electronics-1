@@ -2,7 +2,7 @@
 
 #### Table of Contents
 1. [Introduction](#introduction) <br/>
-2. Program enrichment <br/>
+2. [Program enrichment](#Program enrichment) <br/>
 3. Simulation <br/>
 3. Software <br/>
 4. References <br/>
